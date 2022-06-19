@@ -61,4 +61,10 @@ task android(type: Test) {
     useJUnitPlatform {
         includeTags 'android'
     }
+
+    task studio(type: Test) {
+        useJUnitPlatform {
+            includeTags 'studio'
+        }
+    }
 }
